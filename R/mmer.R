@@ -16,12 +16,12 @@ mmer <- function(fixed, random, rcov, data, weights,
   your.year <- year.mo.day[1]
   your.month <- year.mo.day[2]
   ## if your month is greater than my month you are outdated
-  if(date.warning){
-    if(your.month > my.month & your.year >= my.year){
-      # error if your month is greater and your year is smaller
-      cat("Version out of date. Please update sommer to the newest version using:\ninstall.packages('sommer') in a new session\n Use the 'date.warning' argument to disable the warning message.")
-    }
-  }
+# if(date.warning){
+#   if(your.month > my.month & your.year >= my.year){
+#     # error if your month is greater and your year is smaller
+#     cat("Version out of date. Please update sommer to the newest version using:\ninstall.packages('sommer') in a new session\n Use the 'date.warning' argument to disable the warning message.")
+#   }
+# }
   
   if(missing(data)){
     data <- environment(fixed)
